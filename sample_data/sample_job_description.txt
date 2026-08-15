@@ -1,0 +1,3 @@
+Senior Data Analyst — Rooman Labs
+
+Rooman Labs is hiring a Senior Data Analyst to translate business questions into reliable data products. The successful candidate has 4+ years of analytics experience, strong Python, SQL, statistics, data analysis, Tableau or Power BI, communication, stakeholder management, and Git skills. Experience with machine learning, AWS, Docker, NLP or LLM projects is valued. A bachelor's degree or higher in a quantitative discipline is preferred.

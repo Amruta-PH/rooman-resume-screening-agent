@@ -1,0 +1,11 @@
+Visual verification notes
+
+- Desktop layout at 1280px renders the refined dark, evidence-first screening workspace with readable heading hierarchy, upload cards, fairness cue, responsive grid foundation, and clear primary action.
+- The empty-results state renders correctly on the base route.
+- The demo query state was observed in its loading state at capture time and requires a direct service/network check before confirming the populated dashboard screenshot.
+
+The direct browser review of `/?demo=1` subsequently confirmed that the bundled report loads with eleven ranked candidates, score details, aligned skills, missing skills, and the complete Ava Chen explanation. Both export controls generated downloadable files named `rooman-screening-results.csv` and `rooman-screening-results.json`, confirmed in the browser download history. The browser upload harness did not expose the two hidden inputs independently, so server-level analysis is additionally covered by automated tests and the Python unit suite.
+
+Responsive review at 390px confirmed that the navigation rail collapses, upload panels stack, candidate rows remain legible, and the selected-candidate score breakdown flows cleanly below the ranking. At 768px, the compact icon rail, vertically stacked input workspace, and single-column candidate detail maintain readable hierarchy without clipping. The populated report is visually suitable at the checked desktop, tablet, and mobile breakpoints.
+
+Automated final validation passed. The TypeScript suite reported five passing tests, including a new bridge test that generated one TXT job description and ten valid DOCX resumes, supplied their base64 payloads to the actual server procedure, and received a ranked ten-candidate Python analysis result. The TypeScript type check passed, and the Python suite reported three passing tests, including DOCX text extraction.
